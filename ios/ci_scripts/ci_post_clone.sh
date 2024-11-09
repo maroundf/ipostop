@@ -3,19 +3,16 @@
 # debug log
 set -x
 
+echo "===== Installing Node.js ====="
+brew install node
+
 echo "===== Installling CocoaPods ====="
-export HOMEBREW_NO_INSTALL_CLEANUP=TRUE
 brew install cocoapods
 
 echo "===== Installing NVM ====="
 brew install nvm
 export NVM_DIR="$HOME/.nvm"
 source $(brew --prefix nvm)/nvm.sh
-
-echo "===== Installing Node.js ====="
-NODE_VER="21.6.0"
-nvm install $NODE_VER
-nvm use $NODE_VER
 
 echo "===== Verifying Node/NVM Versions ====="
 node -v
