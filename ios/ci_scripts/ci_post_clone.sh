@@ -25,8 +25,7 @@ npm -v
 echo "===== Installing yarn ====="
 brew install yarn
 
-echo "===== Verifying Cocoapods/Yarn Versions ====="
-gem which cocoapods
+echo "===== Verifying Yarn Version ====="
 yarn -v
 
 echo "===== Changing Working Directory to Workspace repo ====="
