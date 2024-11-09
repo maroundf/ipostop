@@ -1,6 +1,5 @@
 #!/bin/sh
 
-set -e
 # debug log
 set -x
 
@@ -21,6 +20,10 @@ nvm use $NODE_VER
 echo "===== Verifying Node/NVM Versions ====="
 node -v
 npm -v
+
+echo "===== Setting NODE_BINARY ENV Variable ====="
+ln -s $(command -v node) /usr/local/bin/node
+export NODE_BINARY=$(command -v node)
 
 echo "===== Installing yarn ====="
 brew install yarn

@@ -1,21 +1,29 @@
 "use strict";
 var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
     return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var __assign = (this && this.__assign) || Object.assign || function(t) {
-    for (var s, i = 1, n = arguments.length; i < n; i++) {
-        s = arguments[i];
-        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-            t[p] = s[p];
-    }
-    return t;
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
@@ -96,8 +104,7 @@ var ImageViewer = /** @class */ (function (_super) {
                 _this.scale = 1;
                 react_native_1.Animated.timing(_this.animatedScale, {
                     toValue: _this.scale,
-                    duration: 100,
-                useNativeDriver: true
+                    duration: 100
                 }).start();
             }
             if (_this.props.imageWidth * _this.scale <= _this.props.cropWidth) {
@@ -105,8 +112,7 @@ var ImageViewer = /** @class */ (function (_super) {
                 _this.positionX = 0;
                 react_native_1.Animated.timing(_this.animatedPositionX, {
                     toValue: _this.positionX,
-                    duration: 100,
-                useNativeDriver: true
+                    duration: 100
                 }).start();
             }
             if (_this.props.imageHeight * _this.scale <= _this.props.cropHeight) {
@@ -114,8 +120,7 @@ var ImageViewer = /** @class */ (function (_super) {
                 _this.positionY = 0;
                 react_native_1.Animated.timing(_this.animatedPositionY, {
                     toValue: _this.positionY,
-                    duration: 100,
-                useNativeDriver: true
+                    duration: 100
                 }).start();
             }
             // 横向肯定不会超出范围，由拖拽时控制
@@ -131,8 +136,7 @@ var ImageViewer = /** @class */ (function (_super) {
                 }
                 react_native_1.Animated.timing(_this.animatedPositionY, {
                     toValue: _this.positionY,
-                    duration: 100,
-                useNativeDriver: true
+                    duration: 100
                 }).start();
             }
             if (_this.props.imageWidth * _this.scale > _this.props.cropWidth) {
@@ -146,8 +150,7 @@ var ImageViewer = /** @class */ (function (_super) {
                 }
                 react_native_1.Animated.timing(_this.animatedPositionX, {
                     toValue: _this.positionX,
-                    duration: 100,
-                useNativeDriver: true
+                    duration: 100
                 }).start();
             }
             // 拖拽正常结束后,如果没有缩放,直接回到0,0点
@@ -156,13 +159,11 @@ var ImageViewer = /** @class */ (function (_super) {
                 _this.positionY = 0;
                 react_native_1.Animated.timing(_this.animatedPositionX, {
                     toValue: _this.positionX,
-                    duration: 100,
-                useNativeDriver: true
+                    duration: 100
                 }).start();
                 react_native_1.Animated.timing(_this.animatedPositionY, {
                     toValue: _this.positionY,
-                    duration: 100,
-                useNativeDriver: true
+                    duration: 100
                 }).start();
             }
             // 水平溢出量置空
@@ -173,7 +174,7 @@ var ImageViewer = /** @class */ (function (_super) {
         };
         return _this;
     }
-    ImageViewer.prototype.UNSAFE_componentWillMount = function () {
+    ImageViewer.prototype.componentWillMount = function () {
         var _this = this;
         this.imagePanResponder = react_native_1.PanResponder.create({
             // 要求成为响应者：
@@ -249,18 +250,15 @@ var ImageViewer = /** @class */ (function (_super) {
                         react_native_1.Animated.parallel([
                             react_native_1.Animated.timing(_this.animatedScale, {
                                 toValue: _this.scale,
-                                duration: 100,
-                useNativeDriver: true
+                                duration: 100
                             }),
                             react_native_1.Animated.timing(_this.animatedPositionX, {
                                 toValue: _this.positionX,
-                                duration: 100,
-                useNativeDriver: true
+                                duration: 100
                             }),
                             react_native_1.Animated.timing(_this.animatedPositionY, {
                                 toValue: _this.positionY,
-                                duration: 100,
-                useNativeDriver: true
+                                duration: 100
                             })
                         ]).start();
                     }
@@ -532,7 +530,7 @@ var ImageViewer = /** @class */ (function (_super) {
             this.centerOn(this.props.centerOn);
         }
     };
-    ImageViewer.prototype.UNSAFE_componentWillReceiveProps = function (nextProps) {
+    ImageViewer.prototype.componentWillReceiveProps = function (nextProps) {
         // Either centerOn has never been called, or it is a repeat and we should ignore it
         if ((nextProps.centerOn && !this.props.centerOn) ||
             (nextProps.centerOn && this.props.centerOn && this.didCenterOnChange(this.props.centerOn, nextProps.centerOn))) {
@@ -562,18 +560,15 @@ var ImageViewer = /** @class */ (function (_super) {
         react_native_1.Animated.parallel([
             react_native_1.Animated.timing(this.animatedScale, {
                 toValue: this.scale,
-                duration: duration,
-                useNativeDriver: true
+                duration: duration
             }),
             react_native_1.Animated.timing(this.animatedPositionX, {
                 toValue: this.positionX,
-                duration: duration,
-                useNativeDriver: true
+                duration: duration
             }),
             react_native_1.Animated.timing(this.animatedPositionY, {
                 toValue: this.positionY,
-                duration: duration,
-                useNativeDriver: true
+                duration: duration
             })
         ]).start(function () {
             _this.imageDidMove('centerOn');
@@ -613,12 +608,12 @@ var ImageViewer = /** @class */ (function (_super) {
             ]
         };
         var parentStyles = react_native_1.StyleSheet.flatten(this.props.style);
-        return (<react_native_1.View style={__assign({}, image_zoom_style_1.default.container, parentStyles, { width: this.props.cropWidth, height: this.props.cropHeight })} {...this.imagePanResponder.panHandlers}>
+        return (<react_native_1.View style={__assign(__assign(__assign({}, image_zoom_style_1.default.container), parentStyles), { width: this.props.cropWidth, height: this.props.cropHeight })} {...this.imagePanResponder.panHandlers}>
         <react_native_1.Animated.View style={animateConf} renderToHardwareTextureAndroid>
           <react_native_1.View onLayout={this.handleLayout.bind(this)} style={{
-            width: this.props.imageWidth,
-            height: this.props.imageHeight
-        }}>
+                width: this.props.imageWidth,
+                height: this.props.imageHeight
+            }}>
             {this.props.children}
           </react_native_1.View>
         </react_native_1.Animated.View>
