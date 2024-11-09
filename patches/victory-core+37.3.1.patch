@@ -1,0 +1,59 @@
+diff --git a/node_modules/victory-core/.DS_Store b/node_modules/victory-core/.DS_Store
+new file mode 100644
+index 0000000..c87ce31
+Binary files /dev/null and b/node_modules/victory-core/.DS_Store differ
+diff --git a/node_modules/victory-core/es/.DS_Store b/node_modules/victory-core/es/.DS_Store
+new file mode 100644
+index 0000000..7e8d27e
+Binary files /dev/null and b/node_modules/victory-core/es/.DS_Store differ
+diff --git a/node_modules/victory-core/es/victory-clip-container/victory-clip-container.js b/node_modules/victory-core/es/victory-clip-container/victory-clip-container.js
+index 77665ec..c8bd3d1 100644
+--- a/node_modules/victory-core/es/victory-clip-container/victory-clip-container.js
++++ b/node_modules/victory-core/es/victory-clip-container/victory-clip-container.js
+@@ -150,8 +150,10 @@ export class VictoryClipContainer extends React.Component {
+     return range ? Math.min(...range) : undefined;
+   }
+   render() {
+-    const clipHeight = this.getClipValue(this.props, "y");
+-    const clipWidth = this.getClipValue(this.props, "x");
++    var clipHeight = this.getClipValue(this.props, "y");
++    var clipWidth = this.getClipValue(this.props, "x");
++    //modified code: added the following two if(clipWidth < 0) if (clipHeight < 0)
++    if (clipWidth < 0) clipWidth = undefined; if (clipHeight < 0) clipHeight = undefined;
+     if (clipWidth === undefined || clipHeight === undefined) {
+       return this.renderGroup(this.props);
+     }
+diff --git a/node_modules/victory-core/lib/victory-clip-container/victory-clip-container.js b/node_modules/victory-core/lib/victory-clip-container/victory-clip-container.js
+index bf28dad..37c21fe 100644
+--- a/node_modules/victory-core/lib/victory-clip-container/victory-clip-container.js
++++ b/node_modules/victory-core/lib/victory-clip-container/victory-clip-container.js
+@@ -159,8 +159,10 @@ class VictoryClipContainer extends _react.default.Component {
+     return range ? Math.min(...range) : undefined;
+   }
+   render() {
+-    const clipHeight = this.getClipValue(this.props, "y");
+-    const clipWidth = this.getClipValue(this.props, "x");
++    var clipHeight = this.getClipValue(this.props, "y");
++    var clipWidth = this.getClipValue(this.props, "x");
++    //modified code
++    if (clipWidth < 0) clipWidth = undefined; if (clipHeight < 0) clipHeight = undefined;
+     if (clipWidth === undefined || clipHeight === undefined) {
+       return this.renderGroup(this.props);
+     }
+diff --git a/node_modules/victory-core/src/victory-clip-container/victory-clip-container.tsx b/node_modules/victory-core/src/victory-clip-container/victory-clip-container.tsx
+index a0cefa3..4ef74fb 100644
+--- a/node_modules/victory-core/src/victory-clip-container/victory-clip-container.tsx
++++ b/node_modules/victory-core/src/victory-clip-container/victory-clip-container.tsx
+@@ -188,8 +188,10 @@ export class VictoryClipContainer extends React.Component<VictoryClipContainerPr
+     return range ? Math.min(...range) : undefined;
+   }
+   render() {
+-    const clipHeight = this.getClipValue(this.props, "y");
+-    const clipWidth = this.getClipValue(this.props, "x");
++    var clipHeight = this.getClipValue(this.props, "y");
++    var clipWidth = this.getClipValue(this.props, "x");
++    //modified code
++    if (clipWidth < 0) clipWidth = undefined; if (clipHeight < 0) clipHeight = undefined;
+     if (clipWidth === undefined || clipHeight === undefined) {
+       return this.renderGroup(this.props);
+     }
