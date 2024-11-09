@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:yarn.lock">
+   </FileRef>
+   <FileRef
+      location = "group:tsconfig.json">
+   </FileRef>
+   <FileRef
+      location = "group:Gemfile">
+   </FileRef>
+   <FileRef
+      location = "group:Gemfile.lock">
+   </FileRef>
+   <FileRef
+      location = "group:package.json">
+   </FileRef>
+   <FileRef
+      location = "group:patches">
+   </FileRef>
+   <FileRef
+      location = "group:jest.config.js">
+   </FileRef>
+   <FileRef
+      location = "group:screens">
+   </FileRef>
+   <FileRef
+      location = "group:utils">
+   </FileRef>
+   <FileRef
+      location = "group:android">
+   </FileRef>
+   <FileRef
+      location = "group:app.json">
+   </FileRef>
+   <FileRef
+      location = "group:babel.config.js">
+   </FileRef>
+   <FileRef
+      location = "group:index.js">
+   </FileRef>
+   <FileRef
+      location = "group:ios">
+   </FileRef>
+   <FileRef
+      location = "group:metro.config.js">
+   </FileRef>
+   <FileRef
+      location = "group:assets">
+   </FileRef>
+   <FileRef
+      location = "group:firebase.json">
+   </FileRef>
+</Workspace>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1921189295",
+    "project_id": "ipostop-cee06",
+    "storage_bucket": "ipostop-cee06.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1921189295:android:3227f65510c5e69b8e1b5a",
+        "android_client_info": {
+          "package_name": "com.megeshealth.ipostopcares"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOgnh7cMfIKKTGBN60YtmzxIJHxG6ly8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

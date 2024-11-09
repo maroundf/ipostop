@@ -1,0 +1,52 @@
+{
+  "_from": "@kylejacobbutler/moment-timezone-locale",
+  "_id": "@kylejacobbutler/moment-timezone-locale@1.0.18",
+  "_inBundle": false,
+  "_integrity": "sha512-IwsrojeuA3H4WHzceRApr5ul2G7vS+JbUsDIQwEX1jDst+LNIEtDf1JwnL0QkP0RK2A9U2IPebUZVT294Vz2BA==",
+  "_location": "/@kylejacobbutler/moment-timezone-locale",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@kylejacobbutler/moment-timezone-locale",
+    "name": "@kylejacobbutler/moment-timezone-locale",
+    "escapedName": "@kylejacobbutler%2fmoment-timezone-locale",
+    "scope": "@kylejacobbutler",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@kylejacobbutler/moment-timezone-locale/-/moment-timezone-locale-1.0.18.tgz",
+  "_shasum": "7adb45f9b24eb6b687ef4f8dd01765252365e10f",
+  "_spec": "@kylejacobbutler/moment-timezone-locale",
+  "_where": "/Library/WebServer/Documents/fragilite",
+  "author": {
+    "name": "Kyle Jacob Jutler"
+  },
+  "bugs": {
+    "url": "https://github.com/kylejacobbutler/moment-timezone-locale/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Moment with Timezone and Locale bundled together.",
+  "directories": {
+    "lib": "lib"
+  },
+  "homepage": "https://github.com/kylejacobbutler/moment-timezone-locale#readme",
+  "keywords": [
+    "moment-timezone-locale"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "@kylejacobbutler/moment-timezone-locale",
+  "private": false,
+  "repository ": {
+    "type": "git",
+    "url": "git+https://github.com/kylejacobbutler/moment-timezone-locale.git"
+  },
+  "version": "1.0.18"
+}

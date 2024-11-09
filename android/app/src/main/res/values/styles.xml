@@ -1,0 +1,15 @@
+<resources>
+    <style name="AppTheme" parent="Theme.ReactNative.AppCompat.Light.NoActionBar.FullScreen">
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+        <item name="android:windowBackground">@drawable/launch_screen_bitmap</item>
+        <item name="android:editTextBackground">@android:color/transparent</item>
+        <item name="android:datePickerDialogTheme">@style/DialogTheme</item>
+        <item name="android:colorControlNormal">@color/blue</item>
+        <!--<item name="android:spinnerItemStyle">@style/SpinnerItem</item><item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItem</item>-->
+    </style>
+    <!--<style name="SpinnerItem" parent="Theme.AppCompat.Light.NoActionBar"><item name="android:textSize">@dimen/tsz1</item><item name="android:fontFamily">@font/montserratlight</item><item name="android:gravity">left</item><item name="android:textColor">@color/black</item></style><style name="SpinnerDropDownItem" parent="Theme.AppCompat.Light.NoActionBar"><item name="android:textSize">@dimen/tsz1</item><item name="android:fontFamily">@font/montserratlight</item><item name="android:gravity">left</item><item name="android:textColor">@color/black</item><item name="android:paddingLeft">@dimen/tsz1</item><item name="android:paddingRight">@dimen/tsz1</item><item name="android:paddingTop">@dimen/pdt1</item></style>-->
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/blue</item>
+        <item name="android:textColorPrimary">@color/black</item>
+    </style>
+</resources>

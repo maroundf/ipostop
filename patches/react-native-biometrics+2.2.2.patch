@@ -1,0 +1,411 @@
+diff --git a/node_modules/react-native-biometrics/.DS_Store b/node_modules/react-native-biometrics/.DS_Store
+new file mode 100644
+index 0000000..5a8d786
+Binary files /dev/null and b/node_modules/react-native-biometrics/.DS_Store differ
+diff --git a/node_modules/react-native-biometrics/android/.DS_Store b/node_modules/react-native-biometrics/android/.DS_Store
+new file mode 100644
+index 0000000..1f1dd36
+Binary files /dev/null and b/node_modules/react-native-biometrics/android/.DS_Store differ
+diff --git a/node_modules/react-native-biometrics/android/build/.transforms/3fcf83aa59d28dbe2b58d30ac9ba4e57/results.bin b/node_modules/react-native-biometrics/android/build/.transforms/3fcf83aa59d28dbe2b58d30ac9ba4e57/results.bin
+new file mode 100644
+index 0000000..0d259dd
+--- /dev/null
++++ b/node_modules/react-native-biometrics/android/build/.transforms/3fcf83aa59d28dbe2b58d30ac9ba4e57/results.bin
+@@ -0,0 +1 @@
++o/classes
+diff --git a/node_modules/react-native-biometrics/android/build/.transforms/3fcf83aa59d28dbe2b58d30ac9ba4e57/transformed/classes/classes_dex/classes.dex b/node_modules/react-native-biometrics/android/build/.transforms/3fcf83aa59d28dbe2b58d30ac9ba4e57/transformed/classes/classes_dex/classes.dex
+new file mode 100644
+index 0000000..c05d819
+Binary files /dev/null and b/node_modules/react-native-biometrics/android/build/.transforms/3fcf83aa59d28dbe2b58d30ac9ba4e57/transformed/classes/classes_dex/classes.dex differ
+diff --git a/node_modules/react-native-biometrics/android/build/generated/source/buildConfig/debug/com/rnbiometrics/BuildConfig.java b/node_modules/react-native-biometrics/android/build/generated/source/buildConfig/debug/com/rnbiometrics/BuildConfig.java
+new file mode 100644
+index 0000000..c18a39e
+--- /dev/null
++++ b/node_modules/react-native-biometrics/android/build/generated/source/buildConfig/debug/com/rnbiometrics/BuildConfig.java
+@@ -0,0 +1,10 @@
++/**
++ * Automatically generated file. DO NOT MODIFY
++ */
++package com.rnbiometrics;
++
++public final class BuildConfig {
++  public static final boolean DEBUG = Boolean.parseBoolean("true");
++  public static final String LIBRARY_PACKAGE_NAME = "com.rnbiometrics";
++  public static final String BUILD_TYPE = "debug";
++}
+diff --git a/node_modules/react-native-biometrics/android/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/AndroidManifest.xml b/node_modules/react-native-biometrics/android/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/AndroidManifest.xml
+new file mode 100644
+index 0000000..4f8fa61
+--- /dev/null
++++ b/node_modules/react-native-biometrics/android/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/AndroidManifest.xml
+@@ -0,0 +1,10 @@
++<?xml version="1.0" encoding="utf-8"?>
++<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++    package="com.rnbiometrics" >
++
++    <uses-sdk android:minSdkVersion="23" />
++
++    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
++    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
++
++</manifest>
+\ No newline at end of file
+diff --git a/node_modules/react-native-biometrics/android/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/output-metadata.json b/node_modules/react-native-biometrics/android/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/output-metadata.json
+new file mode 100644
+index 0000000..c861451
+--- /dev/null
++++ b/node_modules/react-native-biometrics/android/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/output-metadata.json
+@@ -0,0 +1,18 @@
++{
++  "version": 3,
++  "artifactType": {
++    "type": "AAPT_FRIENDLY_MERGED_MANIFESTS",
++    "kind": "Directory"
++  },
++  "applicationId": "com.rnbiometrics",
++  "variantName": "debug",
++  "elements": [
++    {
++      "type": "SINGLE",
++      "filters": [],
++      "attributes": [],
++      "outputFile": "AndroidManifest.xml"
++    }
++  ],
++  "elementType": "File"
++}
+\ No newline at end of file
+diff --git a/node_modules/react-native-biometrics/android/build/intermediates/aar_metadata/debug/writeDebugAarMetadata/aar-metadata.properties b/node_modules/react-native-biometrics/android/build/intermediates/aar_metadata/debug/writeDebugAarMetadata/aar-metadata.properties
+new file mode 100644
+index 0000000..1211b1e
+--- /dev/null
++++ b/node_modules/react-native-biometrics/android/build/intermediates/aar_metadata/debug/writeDebugAarMetadata/aar-metadata.properties
+@@ -0,0 +1,6 @@
++aarFormatVersion=1.0
++aarMetadataVersion=1.0
++minCompileSdk=1
++minCompileSdkExtension=0
++minAndroidGradlePluginVersion=1.0.0
++coreLibraryDesugaringEnabled=false
+diff --git a/node_modules/react-native-biometrics/android/build/intermediates/annotation_processor_list/debug/javaPreCompileDebug/annotationProcessors.json b/node_modules/react-native-biometrics/android/build/intermediates/annotation_processor_list/debug/javaPreCompileDebug/annotationProcessors.json
+new file mode 100644
+index 0000000..9e26dfe
+--- /dev/null
++++ b/node_modules/react-native-biometrics/android/build/intermediates/annotation_processor_list/debug/javaPreCompileDebug/annotationProcessors.json
+@@ -0,0 +1 @@
++{}
+\ No newline at end of file
+diff --git a/node_modules/react-native-biometrics/android/build/intermediates/compile_library_classes_jar/debug/bundleLibCompileToJarDebug/classes.jar b/node_modules/react-native-biometrics/android/build/intermediates/compile_library_classes_jar/debug/bundleLibCompileToJarDebug/classes.jar
+new file mode 100644
+index 0000000..db48983
+Binary files /dev/null and b/node_modules/react-native-biometrics/android/build/intermediates/compile_library_classes_jar/debug/bundleLibCompileToJarDebug/classes.jar differ
+diff --git a/node_modules/react-native-biometrics/android/build/intermediates/compile_r_class_jar/debug/generateDebugRFile/R.jar b/node_modules/react-native-biometrics/android/build/intermediates/compile_r_class_jar/debug/generateDebugRFile/R.jar
+new file mode 100644
+index 0000000..3176ba1
+Binary files /dev/null and b/node_modules/react-native-biometrics/android/build/intermediates/compile_r_class_jar/debug/generateDebugRFile/R.jar differ
+diff --git a/node_modules/react-native-biometrics/android/build/intermediates/compile_symbol_list/debug/generateDebugRFile/R.txt b/node_modules/react-native-biometrics/android/build/intermediates/compile_symbol_list/debug/generateDebugRFile/R.txt
+new file mode 100644
+index 0000000..e69de29
+diff --git a/node_modules/react-native-biometrics/android/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties b/node_modules/react-native-biometrics/android/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties
+new file mode 100644
+index 0000000..53a6825
+--- /dev/null
++++ b/node_modules/react-native-biometrics/android/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties
+@@ -0,0 +1 @@
++#Sun Nov 03 17:17:58 CET 2024
+diff --git a/node_modules/react-native-biometrics/android/build/intermediates/incremental/debug/packageDebugResources/merger.xml b/node_modules/react-native-biometrics/android/build/intermediates/incremental/debug/packageDebugResources/merger.xml
+new file mode 100644
+index 0000000..54c2522
+--- /dev/null
++++ b/node_modules/react-native-biometrics/android/build/intermediates/incremental/debug/packageDebugResources/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/johndoe/MyDocuments/ipostop/node_modules/react-native-biometrics/android/src/main/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/johndoe/MyDocuments/ipostop/node_modules/react-native-biometrics/android/src/main/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/johndoe/MyDocuments/ipostop/node_modules/react-native-biometrics/android/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/johndoe/MyDocuments/ipostop/node_modules/react-native-biometrics/android/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/johndoe/MyDocuments/ipostop/node_modules/react-native-biometrics/android/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/johndoe/MyDocuments/ipostop/node_modules/react-native-biometrics/android/build/generated/res/resValues/debug"/></dataSet><mergedItems/></merger>
+\ No newline at end of file
+diff --git a/node_modules/react-native-biometrics/android/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml b/node_modules/react-native-biometrics/android/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml
+new file mode 100644
+index 0000000..afd828d
+--- /dev/null
++++ b/node_modules/react-native-biometrics/android/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/johndoe/MyDocuments/ipostop/node_modules/react-native-biometrics/android/src/main/jniLibs"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/johndoe/MyDocuments/ipostop/node_modules/react-native-biometrics/android/src/debug/jniLibs"/></dataSet></merger>
+\ No newline at end of file
+diff --git a/node_modules/react-native-biometrics/android/build/intermediates/incremental/mergeDebugShaders/merger.xml b/node_modules/react-native-biometrics/android/build/intermediates/incremental/mergeDebugShaders/merger.xml
+new file mode 100644
+index 0000000..c507cc1
+--- /dev/null
++++ b/node_modules/react-native-biometrics/android/build/intermediates/incremental/mergeDebugShaders/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/johndoe/MyDocuments/ipostop/node_modules/react-native-biometrics/android/src/main/shaders"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/johndoe/MyDocuments/ipostop/node_modules/react-native-biometrics/android/src/debug/shaders"/></dataSet></merger>
+\ No newline at end of file
+diff --git a/node_modules/react-native-biometrics/android/build/intermediates/incremental/packageDebugAssets/merger.xml b/node_modules/react-native-biometrics/android/build/intermediates/incremental/packageDebugAssets/merger.xml
+new file mode 100644
+index 0000000..51a66b9
+--- /dev/null
++++ b/node_modules/react-native-biometrics/android/build/intermediates/incremental/packageDebugAssets/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/johndoe/MyDocuments/ipostop/node_modules/react-native-biometrics/android/src/main/assets"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/johndoe/MyDocuments/ipostop/node_modules/react-native-biometrics/android/src/debug/assets"/></dataSet><dataSet config="generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/johndoe/MyDocuments/ipostop/node_modules/react-native-biometrics/android/build/intermediates/shader_assets/debug/compileDebugShaders/out"/></dataSet></merger>
+\ No newline at end of file
+diff --git a/node_modules/react-native-biometrics/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/rnbiometrics/BuildConfig.class b/node_modules/react-native-biometrics/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/rnbiometrics/BuildConfig.class
+new file mode 100644
+index 0000000..682471e
+Binary files /dev/null and b/node_modules/react-native-biometrics/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/rnbiometrics/BuildConfig.class differ
+diff --git a/node_modules/react-native-biometrics/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/rnbiometrics/CreateSignatureCallback.class b/node_modules/react-native-biometrics/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/rnbiometrics/CreateSignatureCallback.class
+new file mode 100644
+index 0000000..27fec28
+Binary files /dev/null and b/node_modules/react-native-biometrics/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/rnbiometrics/CreateSignatureCallback.class differ
+diff --git a/node_modules/react-native-biometrics/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/rnbiometrics/ReactNativeBiometrics$1.class b/node_modules/react-native-biometrics/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/rnbiometrics/ReactNativeBiometrics$1.class
+new file mode 100644
+index 0000000..926489e
+Binary files /dev/null and b/node_modules/react-native-biometrics/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/rnbiometrics/ReactNativeBiometrics$1.class differ
+diff --git a/node_modules/react-native-biometrics/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/rnbiometrics/ReactNativeBiometrics$2.class b/node_modules/react-native-biometrics/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/rnbiometrics/ReactNativeBiometrics$2.class
+new file mode 100644
+index 0000000..cf9a6d4
+Binary files /dev/null and b/node_modules/react-native-biometrics/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/rnbiometrics/ReactNativeBiometrics$2.class differ
+diff --git a/node_modules/react-native-biometrics/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/rnbiometrics/ReactNativeBiometrics.class b/node_modules/react-native-biometrics/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/rnbiometrics/ReactNativeBiometrics.class
+new file mode 100644
+index 0000000..63782da
+Binary files /dev/null and b/node_modules/react-native-biometrics/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/rnbiometrics/ReactNativeBiometrics.class differ
+diff --git a/node_modules/react-native-biometrics/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/rnbiometrics/ReactNativeBiometricsPackage.class b/node_modules/react-native-biometrics/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/rnbiometrics/ReactNativeBiometricsPackage.class
+new file mode 100644
+index 0000000..3158764
+Binary files /dev/null and b/node_modules/react-native-biometrics/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/rnbiometrics/ReactNativeBiometricsPackage.class differ
+diff --git a/node_modules/react-native-biometrics/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/rnbiometrics/SimplePromptCallback.class b/node_modules/react-native-biometrics/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/rnbiometrics/SimplePromptCallback.class
+new file mode 100644
+index 0000000..c97cdf0
+Binary files /dev/null and b/node_modules/react-native-biometrics/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/rnbiometrics/SimplePromptCallback.class differ
+diff --git a/node_modules/react-native-biometrics/android/build/intermediates/local_only_symbol_list/debug/parseDebugLocalResources/R-def.txt b/node_modules/react-native-biometrics/android/build/intermediates/local_only_symbol_list/debug/parseDebugLocalResources/R-def.txt
+new file mode 100644
+index 0000000..78ac5b8
+--- /dev/null
++++ b/node_modules/react-native-biometrics/android/build/intermediates/local_only_symbol_list/debug/parseDebugLocalResources/R-def.txt
+@@ -0,0 +1,2 @@
++R_DEF: Internal format may change without notice
++local
+diff --git a/node_modules/react-native-biometrics/android/build/intermediates/manifest_merge_blame_file/debug/processDebugManifest/manifest-merger-blame-debug-report.txt b/node_modules/react-native-biometrics/android/build/intermediates/manifest_merge_blame_file/debug/processDebugManifest/manifest-merger-blame-debug-report.txt
+new file mode 100644
+index 0000000..21554a1
+--- /dev/null
++++ b/node_modules/react-native-biometrics/android/build/intermediates/manifest_merge_blame_file/debug/processDebugManifest/manifest-merger-blame-debug-report.txt
+@@ -0,0 +1,14 @@
++1<?xml version="1.0" encoding="utf-8"?>
++2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++3    package="com.rnbiometrics" >
++4
++5    <uses-sdk android:minSdkVersion="23" />
++6
++7    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
++7-->/Users/johndoe/MyDocuments/ipostop/node_modules/react-native-biometrics/android/src/main/AndroidManifest.xml:4:5-72
++7-->/Users/johndoe/MyDocuments/ipostop/node_modules/react-native-biometrics/android/src/main/AndroidManifest.xml:4:22-69
++8    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
++8-->/Users/johndoe/MyDocuments/ipostop/node_modules/react-native-biometrics/android/src/main/AndroidManifest.xml:5:5-74
++8-->/Users/johndoe/MyDocuments/ipostop/node_modules/react-native-biometrics/android/src/main/AndroidManifest.xml:5:22-71
++9
++10</manifest>
+diff --git a/node_modules/react-native-biometrics/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml b/node_modules/react-native-biometrics/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml
+new file mode 100644
+index 0000000..4f8fa61
+--- /dev/null
++++ b/node_modules/react-native-biometrics/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml
+@@ -0,0 +1,10 @@
++<?xml version="1.0" encoding="utf-8"?>
++<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++    package="com.rnbiometrics" >
++
++    <uses-sdk android:minSdkVersion="23" />
++
++    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
++    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
++
++</manifest>
+\ No newline at end of file
+diff --git a/node_modules/react-native-biometrics/android/build/intermediates/navigation_json/debug/extractDeepLinksDebug/navigation.json b/node_modules/react-native-biometrics/android/build/intermediates/navigation_json/debug/extractDeepLinksDebug/navigation.json
+new file mode 100644
+index 0000000..0637a08
+--- /dev/null
++++ b/node_modules/react-native-biometrics/android/build/intermediates/navigation_json/debug/extractDeepLinksDebug/navigation.json
+@@ -0,0 +1 @@
++[]
+\ No newline at end of file
+diff --git a/node_modules/react-native-biometrics/android/build/intermediates/nested_resources_validation_report/debug/generateDebugResources/nestedResourcesValidationReport.txt b/node_modules/react-native-biometrics/android/build/intermediates/nested_resources_validation_report/debug/generateDebugResources/nestedResourcesValidationReport.txt
+new file mode 100644
+index 0000000..08f4ebe
+--- /dev/null
++++ b/node_modules/react-native-biometrics/android/build/intermediates/nested_resources_validation_report/debug/generateDebugResources/nestedResourcesValidationReport.txt
+@@ -0,0 +1 @@
++0 Warning/Error
+\ No newline at end of file
+diff --git a/node_modules/react-native-biometrics/android/build/intermediates/runtime_library_classes_jar/debug/bundleLibRuntimeToJarDebug/classes.jar b/node_modules/react-native-biometrics/android/build/intermediates/runtime_library_classes_jar/debug/bundleLibRuntimeToJarDebug/classes.jar
+new file mode 100644
+index 0000000..0fd33b9
+Binary files /dev/null and b/node_modules/react-native-biometrics/android/build/intermediates/runtime_library_classes_jar/debug/bundleLibRuntimeToJarDebug/classes.jar differ
+diff --git a/node_modules/react-native-biometrics/android/build/intermediates/symbol_list_with_package_name/debug/generateDebugRFile/package-aware-r.txt b/node_modules/react-native-biometrics/android/build/intermediates/symbol_list_with_package_name/debug/generateDebugRFile/package-aware-r.txt
+new file mode 100644
+index 0000000..5a9c08b
+--- /dev/null
++++ b/node_modules/react-native-biometrics/android/build/intermediates/symbol_list_with_package_name/debug/generateDebugRFile/package-aware-r.txt
+@@ -0,0 +1 @@
++com.rnbiometrics
+diff --git a/node_modules/react-native-biometrics/android/build/outputs/logs/manifest-merger-debug-report.txt b/node_modules/react-native-biometrics/android/build/outputs/logs/manifest-merger-debug-report.txt
+new file mode 100644
+index 0000000..01514db
+--- /dev/null
++++ b/node_modules/react-native-biometrics/android/build/outputs/logs/manifest-merger-debug-report.txt
+@@ -0,0 +1,25 @@
++-- Merging decision tree log ---
++manifest
++ADDED from /Users/johndoe/MyDocuments/ipostop/node_modules/react-native-biometrics/android/src/main/AndroidManifest.xml:2:1-6:12
++INJECTED from /Users/johndoe/MyDocuments/ipostop/node_modules/react-native-biometrics/android/src/main/AndroidManifest.xml:2:1-6:12
++	package
++		ADDED from /Users/johndoe/MyDocuments/ipostop/node_modules/react-native-biometrics/android/src/main/AndroidManifest.xml:3:11-37
++		INJECTED from /Users/johndoe/MyDocuments/ipostop/node_modules/react-native-biometrics/android/src/main/AndroidManifest.xml
++	xmlns:android
++		ADDED from /Users/johndoe/MyDocuments/ipostop/node_modules/react-native-biometrics/android/src/main/AndroidManifest.xml:2:11-69
++uses-permission#android.permission.USE_BIOMETRIC
++ADDED from /Users/johndoe/MyDocuments/ipostop/node_modules/react-native-biometrics/android/src/main/AndroidManifest.xml:4:5-72
++	android:name
++		ADDED from /Users/johndoe/MyDocuments/ipostop/node_modules/react-native-biometrics/android/src/main/AndroidManifest.xml:4:22-69
++uses-permission#android.permission.USE_FINGERPRINT
++ADDED from /Users/johndoe/MyDocuments/ipostop/node_modules/react-native-biometrics/android/src/main/AndroidManifest.xml:5:5-74
++	android:name
++		ADDED from /Users/johndoe/MyDocuments/ipostop/node_modules/react-native-biometrics/android/src/main/AndroidManifest.xml:5:22-71
++uses-sdk
++INJECTED from /Users/johndoe/MyDocuments/ipostop/node_modules/react-native-biometrics/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
++INJECTED from /Users/johndoe/MyDocuments/ipostop/node_modules/react-native-biometrics/android/src/main/AndroidManifest.xml
++INJECTED from /Users/johndoe/MyDocuments/ipostop/node_modules/react-native-biometrics/android/src/main/AndroidManifest.xml
++	android:targetSdkVersion
++		INJECTED from /Users/johndoe/MyDocuments/ipostop/node_modules/react-native-biometrics/android/src/main/AndroidManifest.xml
++	android:minSdkVersion
++		INJECTED from /Users/johndoe/MyDocuments/ipostop/node_modules/react-native-biometrics/android/src/main/AndroidManifest.xml
+diff --git a/node_modules/react-native-biometrics/android/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin b/node_modules/react-native-biometrics/android/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin
+new file mode 100644
+index 0000000..f75253c
+Binary files /dev/null and b/node_modules/react-native-biometrics/android/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin differ
+diff --git a/node_modules/react-native-biometrics/android/src/main/java/com/rnbiometrics/ReactNativeBiometrics.java b/node_modules/react-native-biometrics/android/src/main/java/com/rnbiometrics/ReactNativeBiometrics.java
+index 790a373..5594cab 100644
+--- a/node_modules/react-native-biometrics/android/src/main/java/com/rnbiometrics/ReactNativeBiometrics.java
++++ b/node_modules/react-native-biometrics/android/src/main/java/com/rnbiometrics/ReactNativeBiometrics.java
+@@ -38,6 +38,9 @@ public class ReactNativeBiometrics extends ReactContextBaseJavaModule {
+ 
+     protected String biometricKeyAlias = "biometric_key";
+ 
++    //modified code: added property bp
++    public BiometricPrompt bp;
++
+     public ReactNativeBiometrics(ReactApplicationContext reactContext) {
+         super(reactContext);
+     }
+@@ -196,6 +199,8 @@ public class ReactNativeBiometrics extends ReactContextBaseJavaModule {
+                                 FragmentActivity fragmentActivity = (FragmentActivity) getCurrentActivity();
+                                 Executor executor = Executors.newSingleThreadExecutor();
+                                 BiometricPrompt biometricPrompt = new BiometricPrompt(fragmentActivity, executor, authCallback);
++                                //modified code: assign biometricPrompt to bp
++                                bp = biometricPrompt;
+ 
+                                 PromptInfo promptInfo = new PromptInfo.Builder()
+                                         .setDeviceCredentialAllowed(false)
+@@ -213,6 +218,16 @@ public class ReactNativeBiometrics extends ReactContextBaseJavaModule {
+         }
+     }
+ 
++    //modified code: added function dismissPrompt()
++    @ReactMethod
++    public void dismissPrompt() {
++        if (this.bp != null)
++            try {
++                this.bp.cancelAuthentication();
++            } catch (Exception e) {
++            }
++    }
++
+     @ReactMethod
+     public void biometricKeysExist(Promise promise) {
+         try {
+diff --git a/node_modules/react-native-biometrics/build/cjs/index.d.ts b/node_modules/react-native-biometrics/build/cjs/index.d.ts
+index d45c025..f9f04ca 100644
+--- a/node_modules/react-native-biometrics/build/cjs/index.d.ts
++++ b/node_modules/react-native-biometrics/build/cjs/index.d.ts
+@@ -91,5 +91,7 @@ declare module ReactNativeBiometrics {
+      * @returns {Promise<Object>}  Promise that resolves an object with details about the biometrics result
+      */
+     function simplePrompt(simplePromptOptions: SimplePromptOptions): Promise<SimplePromptResult>;
++    //modified code: added function dismissPrompt()
++    function dismissPrompt();
+ }
+ export default ReactNativeBiometrics;
+diff --git a/node_modules/react-native-biometrics/build/cjs/index.js b/node_modules/react-native-biometrics/build/cjs/index.js
+index 24b4e72..247aeb3 100644
+--- a/node_modules/react-native-biometrics/build/cjs/index.js
++++ b/node_modules/react-native-biometrics/build/cjs/index.js
+@@ -84,6 +84,11 @@ var ReactNativeBiometrics;
+         return bridge.simplePrompt(simplePromptOptions);
+     }
+     ReactNativeBiometrics.simplePrompt = simplePrompt;
++    //modified code: added function dismissPrompt()
++    function dismissPrompt() {
++      return new ReactNativeBiometrics().dismissPrompt()
++    }
++    ReactNativeBiometrics.dismissPrompt = dismissPrompt;
+ })(ReactNativeBiometrics || (ReactNativeBiometrics = {}));
+ exports.default = ReactNativeBiometrics;
+ //# sourceMappingURL=index.js.map
+diff --git a/node_modules/react-native-biometrics/build/esm/index.d.ts b/node_modules/react-native-biometrics/build/esm/index.d.ts
+index d45c025..f9f04ca 100644
+--- a/node_modules/react-native-biometrics/build/esm/index.d.ts
++++ b/node_modules/react-native-biometrics/build/esm/index.d.ts
+@@ -91,5 +91,7 @@ declare module ReactNativeBiometrics {
+      * @returns {Promise<Object>}  Promise that resolves an object with details about the biometrics result
+      */
+     function simplePrompt(simplePromptOptions: SimplePromptOptions): Promise<SimplePromptResult>;
++    //modified code: added function dismissPrompt()
++    function dismissPrompt();
+ }
+ export default ReactNativeBiometrics;
+diff --git a/node_modules/react-native-biometrics/build/esm/index.js b/node_modules/react-native-biometrics/build/esm/index.js
+index 7ed94bf..cc6ed1d 100644
+--- a/node_modules/react-native-biometrics/build/esm/index.js
++++ b/node_modules/react-native-biometrics/build/esm/index.js
+@@ -82,6 +82,11 @@ var ReactNativeBiometrics;
+         return bridge.simplePrompt(simplePromptOptions);
+     }
+     ReactNativeBiometrics.simplePrompt = simplePrompt;
++    //modified code: added function dismissPrompt()
++    function dismissPrompt() {
++      return new ReactNativeBiometrics().dismissPrompt()
++    }
++    ReactNativeBiometrics.dismissPrompt = dismissPrompt;
+ })(ReactNativeBiometrics || (ReactNativeBiometrics = {}));
+ export default ReactNativeBiometrics;
+ //# sourceMappingURL=index.js.map
+diff --git a/node_modules/react-native-biometrics/ios/ReactNativeBiometrics.m b/node_modules/react-native-biometrics/ios/ReactNativeBiometrics.m
+index e1aa016..0acc45d 100644
+--- a/node_modules/react-native-biometrics/ios/ReactNativeBiometrics.m
++++ b/node_modules/react-native-biometrics/ios/ReactNativeBiometrics.m
+@@ -162,6 +162,8 @@ @implementation ReactNativeBiometrics
+ 
+     LAContext *context = [[LAContext alloc] init];
+     context.localizedFallbackTitle = @"";
++    //modified code: assign biometricPrompt to bp
++    bp = context;
+ 
+     [context evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics localizedReason:promptMessage reply:^(BOOL success, NSError *biometricError) {
+       if (success) {
+@@ -183,6 +185,15 @@ @implementation ReactNativeBiometrics
+   });
+ }
+ 
++//modified code: added property bp
++LAContext *bp;
++//modified code: added function dismissPrompt()
++RCT_EXPORT_METHOD(dismissPrompt) {
++  if(bp != nil) {
++    [bp invalidate];
++  }
++}
++
+ RCT_EXPORT_METHOD(biometricKeysExist: (RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
+   dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+     BOOL biometricKeyExists = [self doesBiometricKeyExist];
