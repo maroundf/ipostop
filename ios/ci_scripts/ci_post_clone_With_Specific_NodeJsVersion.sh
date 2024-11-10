@@ -3,11 +3,19 @@
 # debug log
 set -x
 
-echo "===== Installing Node.js ====="
-brew install node
-
 echo "===== Installling CocoaPods ====="
+export HOMEBREW_NO_INSTALL_CLEANUP=TRUE
 brew install cocoapods
+
+echo "===== Installing NVM ====="
+brew install nvm
+export NVM_DIR="$HOME/.nvm"
+source $(brew --prefix nvm)/nvm.sh
+
+echo "===== Installing Node.js ====="
+NODE_VER="21.6.0"
+nvm install $NODE_VER
+nvm use $NODE_VER
 
 echo "===== Verifying Node/NVM Versions ====="
 node -v
@@ -27,19 +35,21 @@ ls -ltr
 
 echo "===== Installing dependencies ====="
 yarn install
+echo "===== Working Directory 2 ====="
+pwd
+ls -ltr node_modules
+if [ -d "node_modules/react-native" ]; then
+    ls -ltr node_modules/react-native
+    if [ -d "node_modules/react-native/scripts" ]; then
+        ls -ltr node_modules/react-native/scripts
+    fi
+fi
 
 echo "===== Changing Working Directory to ios ====="
 cd ios
-echo "===== Working Directory 2 ====="
+echo "===== Working Directory 3 ====="
 pwd
 ls -ltr
 
 echo "===== Running pod install ====="
 pod install
-
-echo "===== Environment Variables ====="
-echo $REACT_NATIVE_PATH
-echo $RCT_SCRIPT_RN_DIR
-echo $PODS_ROOT
-echo $PODS_TARGET_SRCROOT
-echo $NODE_BINARY
