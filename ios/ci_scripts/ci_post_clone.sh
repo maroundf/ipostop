@@ -13,6 +13,7 @@ echo "===== Verifying Node/NVM Versions ====="
 node -v
 npm -v
 echo $(command -v node)
+echo $(which node)
 
 echo "===== Installing yarn ====="
 brew install yarn
