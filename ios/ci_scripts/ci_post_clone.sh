@@ -9,11 +9,6 @@ brew install node
 echo "===== Installling CocoaPods ====="
 brew install cocoapods
 
-echo "===== Installing NVM ====="
-brew install nvm
-export NVM_DIR="$HOME/.nvm"
-source $(brew --prefix nvm)/nvm.sh
-
 echo "===== Verifying Node/NVM Versions ====="
 node -v
 npm -v
