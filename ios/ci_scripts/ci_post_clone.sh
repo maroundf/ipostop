@@ -12,6 +12,7 @@ brew install cocoapods
 echo "===== Verifying Node/NVM Versions ====="
 node -v
 npm -v
+echo $(command -v node)
 
 echo "===== Installing yarn ====="
 brew install yarn
@@ -37,9 +38,3 @@ ls -ltr
 echo "===== Running pod install ====="
 pod install
 
-echo "===== Environment Variables ====="
-echo $REACT_NATIVE_PATH
-echo $RCT_SCRIPT_RN_DIR
-echo $PODS_ROOT
-echo $PODS_TARGET_SRCROOT
-echo $NODE_BINARY
