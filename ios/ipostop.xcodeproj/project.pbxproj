@@ -28,9 +28,9 @@
 
 /* Begin PBXFileReference section */
 		13B07F961A680F5B00A75B9A /* ipostop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ipostop.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		16B3DBE6628A2B5919953797 /* Pods-ipostop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ipostop.debug.xcconfig"; path = "Target Support Files/Pods-ipostop/Pods-ipostop.debug.xcconfig"; sourceTree = "<group>"; };
-		6912535C9130A6ED9CC1BDAF /* Pods-ipostop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ipostop.release.xcconfig"; path = "Target Support Files/Pods-ipostop/Pods-ipostop.release.xcconfig"; sourceTree = "<group>"; };
 		7F395D152CD67B23003AE3B3 /* ci_post_clone.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_clone.sh; sourceTree = "<group>"; };
+		7F3999DF2CE244AE003DF8D0 /* ci_pre_xcodebuild.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_pre_xcodebuild.sh; sourceTree = "<group>"; };
+		7F3999E02CE244AE003DF8D0 /* ci_post_clone_With_Specific_NodeJsVersion.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_clone_With_Specific_NodeJsVersion.sh; sourceTree = "<group>"; };
 		7F89066123B02FEE0022AADB /* QBImagePicker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QBImagePicker.storyboard; sourceTree = "<group>"; };
 		7F97CC6C261359BA00A5EEC9 /* ipostop.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; name = ipostop.entitlements; path = ipostop/ipostop.entitlements; sourceTree = "<group>"; };
 		7F97CC6D261359BA00A5EEC9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "ipostop/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -101,6 +101,8 @@
 		7F395D142CD67B07003AE3B3 /* ci_scripts */ = {
 			isa = PBXGroup;
 			children = (
+				7F3999E02CE244AE003DF8D0 /* ci_post_clone_With_Specific_NodeJsVersion.sh */,
+				7F3999DF2CE244AE003DF8D0 /* ci_pre_xcodebuild.sh */,
 				7F395D152CD67B23003AE3B3 /* ci_post_clone.sh */,
 			);
 			path = ci_scripts;
@@ -156,8 +158,6 @@
 		A22D0E317A824A819FD3A020 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				16B3DBE6628A2B5919953797 /* Pods-ipostop.debug.xcconfig */,
-				6912535C9130A6ED9CC1BDAF /* Pods-ipostop.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -407,7 +407,6 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16B3DBE6628A2B5919953797 /* Pods-ipostop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
@@ -484,7 +483,6 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6912535C9130A6ED9CC1BDAF /* Pods-ipostop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
